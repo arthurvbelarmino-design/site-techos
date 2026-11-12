@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechOS | O ERP para Assistências Técnicas</title>
+    <meta name="description" content="Gerencie Ordens de Serviço, clientes, orçamentos e envie atualizações automáticas por WhatsApp. A solução completa para sua assistência técnica.">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Ícones (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">TechOS<span>.</span></a>
+            
+            <nav class="nav-desktop">
+                <a href="#inicio">Início</a>
+                <a href="#produto">Produto</a>
+                <a href="#solucoes">Soluções</a>
+                <a href="#empresa">A Empresa</a>
+                <a href="#planos">Preços</a>
+                <a href="http://app.techos.com.br" class="btn-login">Login</a>
+                <a href="#planos" class="btn-principal-nav">Teste Grátis</a>
+            </nav>
+
+            <div class="menu-mobile-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="#inicio" onclick="toggleMenu()">Início</a>
+            <a href="#produto" onclick="toggleMenu()">Produto</a>
+            <a href="#solucoes" onclick="toggleMenu()">Soluções</a>
+            <a href="#empresa" onclick="toggleMenu()">A Empresa</a>
+            <a href="#planos" onclick="toggleMenu()">Preços</a>
+            <a href="http://app.techos.com.br" class="btn-login" style="text-align:center; margin-top: 10px;">Acessar Sistema</a>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO (Premium) -->
+    <section id="inicio" class="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-split fade-in">
+            
+            <div class="hero-texto">
+                <span class="badge-hero"><i class="fa-solid fa-bolt"></i> Lançamento Oficial</span>
+                <h1>Gerencie sua assistência com a precisão de uma <span class="destaque">grande empresa.</span></h1>
+                <p>Do checklist de entrada à entrega do aparelho. O TechOS organiza seus clientes, automatiza avisos no WhatsApp e profissionaliza seus laudos técnicos.</p>
+                <div class="hero-botoes">
+                    <a href="http://app.techos.com.br" class="btn-principal">Começar Teste Grátis</a>
+                    <a href="#produto" class="btn-secundario">Ver como funciona</a>
+                </div>
+                <div class="hero-confianca">
+                    <span><i class="fa-solid fa-circle-check"></i> Sem cartão de crédito</span>
+                    <span><i class="fa-solid fa-circle-check"></i> Cancele quando quiser</span>
+                </div>
+            </div>
+
+            <div class="hero-imagem">
+                <!-- SIMULAÇÃO DO SISTEMA (UI MOCKUP) -->
+                <div class="ui-card-simulacao">
+                    <div class="ui-card-header">
+                        <div class="ui-dots"><span></span><span></span><span></span></div>
+                        <span class="ui-title">OS #00012 - Concluída</span>
+                    </div>
+                    <div class="ui-card-body">
+                        <div class="ui-row">
+                            <span class="ui-label">Cliente</span>
+                            <span class="ui-value">Arthur Belarmino</span>
+                        </div>
+                        <div class="ui-row">
+                            <span class="ui-label">Aparelho</span>
+                            <span class="ui-value">iPhone 12</span>
+                        </div>
+                        <div class="ui-row">
+                            <span class="ui-label">Defeito</span>
+                            <span class="ui-value">Traseira trincada</span>
+                        </div>
+                        <div class="ui-row destaque-ui">
+                            <span class="ui-label">Total</span>
+                            <span class="ui-value">R$ 350,00</span>
+                        </div>
+                    </div>
+                    <div class="ui-card-footer">
+                        <span class="ui-status">Pronto para retirada</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAIXA DE CLIENTES -->
+    <section class="faixa-clientes">
+        <div class="container">
+            <p>Empresas que já modernizaram sua gestão com a TechOS:</p>
+            <div class="logos-clientes">
+                <h3>STROMBOLI<span style="color:#f5b000">.</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PRODUTO (Features Alternadas) -->
+    <section id="produto" class="produto">
+        <div class="container fade-in">
+            
+            <!-- Feature 1 -->
+            <div class="feature-row">
+                <div class="feature-texto">
+                    <span class="tag-feature">Ordens de Serviço</span>
+                    <h2>Laudos profissionais que passam confiança.</h2>
+                    <p>Esqueça os cadernos. Crie Ordens de Serviço completas com os dados do aparelho, checklist de entrada e termos de garantia prontos para impressão. Tudo com a identidade da sua loja.</p>
+                    <ul class="lista-check">
+                        <li><i class="fa-solid fa-check"></i> Checklist de entrada (riscos, liga, tela)</li>
+                        <li><i class="fa-solid fa-check"></i> Termo de garantia personalizado</li>
+                        <li><i class="fa-solid fa-check"></i> Impressão em formato A4 oficial</li>
+                    </ul>
+                </div>
+                <div class="feature-imagem">
+                    <!-- SIMULAÇÃO DE TERMO DE GARANTIA -->
+                    <div class="mockup-placeholder-simulado">
+                        <div class="mockup-header">
+                            <strong>Termo de Garantia</strong>
+                            <span class="badge-verde">Gerado</span>
+                        </div>
+                        <div class="mockup-linha"></div>
+                        <div class="mockup-linha curta"></div>
+                        <div class="mockup-linha"></div>
+                        <div class="mockup-linha longa"></div>
+                        <div class="mockup-botao">Baixar PDF</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-row invertido">
+                <div class="feature-texto">
+                    <span class="tag-feature">Comunicação</span>
+                    <h2>Aviso automático no WhatsApp do cliente.</h2>
+                    <p>Chega de ligar várias vezes por dia. Com um clique, o sistema gera a mensagem de "Em andamento" ou "Pronto para retirada" e envia direto para o WhatsApp do seu cliente.</p>
+                    <ul class="lista-check">
+                        <li><i class="fa-solid fa-check"></i> Mensagens personalizadas por status</li>
+                        <li><i class="fa-solid fa-check"></i> Redução do tempo de atendimento</li>
+                        <li><i class="fa-solid fa-check"></i> Cliente mais satisfeito</li>
+                    </ul>
+                </div>
+                <div class="feature-imagem">
+                    <!-- SIMULAÇÃO DE WHATSAPP -->
+                    <div class="mockup-wpp">
+                        <div class="wpp-balao">
+                            <p>Olá, Arthur! Seu aparelho (OS #00012) está *Concluída*. Pode vir buscar!</p>
+                            <div class="wpp-via">Via TechOS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO A EMPRESA -->
+    <section id="empresa" class="empresa">
+        <div class="container fade-in">
+            <div class="empresa-content">
+                <h2>Nascemos para descomplicar a tecnologia.</h2>
+                <p>A TechOS não é apenas um software. É uma empresa focada em dar aos pequenos e médios empreendedores as ferramentas que antes eram exclusivas das grandes redes.</p>
+                <p>Nosso objetivo é que você pare de se preocupar com burocracia e papelada, e volte a focar no que realmente importa: <strong>consertar aparelhos e atender bem o seu cliente.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PREÇOS -->
+    <section id="planos" class="planos">
+        <div class="container fade-in">
+            <h2 class="titulo-secao">Investimento simples</h2>
+            <p class="subtitulo">Menos de R$ 2 por dia para profissionalizar sua loja.</p>
+            
+            <div class="card-plano">
+                <div class="plano-topo">
+                    <h3>TechOS Pro</h3>
+                    <div class="preco">R$ 49<span>,90/mês</span></div>
+                </div>
+                <ul class="lista-planos">
+                    <li><i class="fa-solid fa-check"></i> Ordens de Serviço Ilimitadas</li>
+                    <li><i class="fa-solid fa-check"></i> Avisos no WhatsApp</li>
+                    <li><i class="fa-solid fa-check"></i> Impressão de OS e Termos</li>
+                    <li><i class="fa-solid fa-check"></i> Backup em Nuvem</li>
+                    <li><i class="fa-solid fa-check"></i> Suporte via WhatsApp</li>
+                </ul>
+                <a href="http://app.techos.com.br" class="btn-principal w-100">Criar minha conta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE FAQ -->
+    <section id="faq" class="faq">
+        <div class="container fade-in">
+            <h2 class="titulo-secao">Perguntas Frequentes</h2>
+            
+            <div class="faq-item">
+                <button class="faq-pergunta">Preciso instalar algum programa no meu computador? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-resposta"><p>Não! O TechOS é 100% online. Você só precisa de um navegador (Chrome, Edge, Safari) e internet. Pode acessar de qualquer computador ou celular.</p></div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-pergunta">Meus dados ficam seguros? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-resposta"><p>Sim. Utilizamos servidores em nuvem seguros, e cada assistência técnica tem seus dados totalmente isolados. Ninguém vê as OS ou clientes de outra loja.</p></div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta">Se eu cancelar, perco meus dados? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-resposta"><p>Você pode exportar todos os seus dados (backup) a qualquer momento. Após o cancelamento, mantemos seus dados por 30 dias caso mude de ideia.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+        <div class="container fade-in">
+            <h2>Pronto para modernizar a sua assistência?</h2>
+            <p>Junte-se aos técnicos que já abandonaram o papel.</p>
+            <a href="http://app.techos.com.br" class="btn-principal">Criar Minha Conta Grátis</a>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>TechOS<span>.</span></h2>
+                <p>Tecnologia que impulsiona assistências técnicas.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Produto</h4>
+                <a href="#produto">Ordens de Serviço</a>
+                <a href="#produto">WhatsApp</a>
+                <a href="#planos">Planos</a>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <a href="#empresa">Sobre Nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://wa.me/5511969531212?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20TechOS%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema." target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechOS Tecnologia LTDA. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5511969531212?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20TechOS%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema." class="btn-whatsapp-flutuante" target="_blank" title="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
