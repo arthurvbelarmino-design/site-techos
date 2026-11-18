@@ -77,15 +77,35 @@ header { background-color: #ffffff; position: fixed; width: 100%; top: 0; z-inde
 .passo-proc h3 { font-size: 1.5em; margin-bottom: 10px; color: var(--cor-destaque); position: relative; z-index: 1; }
 .passo-proc p { color: #94a3b8; position: relative; z-index: 1; }
 
-/* EMPRESA */
+/* === SEÇÃO A EMPRESA (MVV) === */
 .empresa { padding: 100px 0; background: #fff; }
-.empresa-split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-.empresa-texto h2 { font-size: 2.5em; font-weight: 900; color: var(--cor-primaria); line-height: 1.2; margin-bottom: 20px; letter-spacing: -1px; }
-.empresa-texto p { font-size: 1.1em; color: var(--cor-texto-muted); margin-bottom: 20px; }
-.empresa-stats { display: flex; gap: 20px; flex-direction: column; }
-.stat-card { background: var(--cor-fundo-alt); padding: 30px; border-radius: 12px; border-left: 4px solid var(--cor-destaque); }
-.stat-card h3 { font-size: 2.5em; color: var(--cor-primaria); font-weight: 900; line-height: 1; margin-bottom: 5px; }
-.stat-card p { color: var(--cor-texto-muted); font-weight: 600; }
+
+.empresa-header { text-align: center; max-width: 850px; margin: 0 auto 60px auto; }
+.empresa-header h2 { font-size: 2.8em; font-weight: 900; color: var(--cor-primaria); line-height: 1.2; margin-bottom: 25px; letter-spacing: -1px; margin-top: 10px; }
+.historia-texto { font-size: 1.15em; color: var(--cor-texto-muted); line-height: 1.8; text-align: center; background: var(--cor-fundo-alt); padding: 30px; border-radius: 16px; border-left: 4px solid var(--cor-destaque); }
+
+.mvv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 60px; }
+
+.mvv-card { background: #fff; padding: 40px 30px; border-radius: 16px; border: 1px solid #e2e8f0; transition: 0.3s; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02); }
+.mvv-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.06); border-color: var(--cor-destaque); }
+
+.mvv-icon { width: 60px; height: 60px; background: #fff9e6; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8em; color: var(--cor-destaque); margin-bottom: 20px; }
+.mvv-card h3 { font-size: 1.5em; font-weight: 800; color: var(--cor-primaria); margin-bottom: 15px; }
+.mvv-card p { color: var(--cor-texto-muted); font-size: 0.95em; line-height: 1.7; }
+
+/* LISTA DE VALORES */
+.lista-valores { list-style: none; padding: 0; margin: 0; }
+.lista-valores li { display: flex; gap: 12px; margin-bottom: 15px; font-size: 0.95em; color: var(--cor-texto-muted); line-height: 1.5; align-items: flex-start; }
+.lista-valores li i { color: #22c55e; margin-top: 4px; font-size: 1.1em; flex-shrink: 0; }
+.lista-valores li span strong { color: var(--cor-primaria); }
+
+.empresa-cta { text-align: center; margin-top: 20px; }
+
+/* Responsividade da seção da empresa */
+@media (max-width: 900px) {
+    .mvv-grid { grid-template-columns: 1fr; }
+    .historia-texto { text-align: left; }
+}
 
 /* CTA FINAL */
 .cta-final { background: var(--cor-fundo-alt); padding: 100px 0; text-align: center; border-top: 1px solid #e2e8f0; }
